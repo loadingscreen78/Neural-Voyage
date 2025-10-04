@@ -91,9 +91,9 @@ NeuralOdyssey/
 ├── README.md
 └── .gitignore
 
-````
 
----
+
+![Home Page](./public/screenshots/homepage.png)
 
 ## 🧠 How It Works
 
@@ -167,7 +167,6 @@ This project is licensed under the **MIT License** — you are free to use, modi
 
 
 
-![Home Page](./public/screenshots/homepage.png)
 ![Timeline Page](./public/screenshots/timeline.png)
 ![Cards Section](./public/screenshots/cards.png)
 
