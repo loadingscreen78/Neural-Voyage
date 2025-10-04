@@ -1,8 +1,4 @@
-Perfect — adding the **homepage** and **timeline** images to your README will make it look polished and showcase the project beautifully on GitHub.
 
-Here’s the **updated version of your README.md** that includes proper image sections and layout placeholders for your uploaded screenshots.
-
----
 
 ### 📘 Updated README (with Homepage + Timeline Images)
 
@@ -52,7 +48,7 @@ This project serves as a **history fact checker, visual timeline, and educationa
 ### 🏠 Home Page  
 _“An immersive entry into the Neural Odyssey experience.”_  
 
-![Home Page](./public/screenshots/homepage.png)
+![Home Page](Untitled - Personal - Microsoft​ Edge 05-10-2025 00_23_34.png)
 
 ---
 
@@ -168,24 +164,12 @@ This project is licensed under the **MIT License** — you are free to use, modi
 
 > “Neural Odyssey” was created to merge the beauty of **history, design, and artificial intelligence** — making knowledge both **aesthetic and interactive**.
 
-```
 
----
 
-### ✅ To Finalize:
-1. Rename your uploaded screenshots as:
-   - `homepage.png`
-   - `timeline.png`
-   - `cards.png`
-2. Place them in  
-```
 
-/public/screenshots/
-
-```
-3. Copy-paste the above markdown into your `README.md`.
-
----
+![Home Page](./public/screenshots/homepage.png)
+![Timeline Page](./public/screenshots/timeline.png)
+![Cards Section](./public/screenshots/cards.png)
 
 Would you like me to generate this updated `README.md` file for download (with the image sections already included)?
 ```
