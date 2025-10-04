@@ -1,0 +1,383 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neural Odyssey Design System - Inspired by neural networks and futuristic storytelling */
+
+@layer base {
+  :root {
+    /* Neural Network Inspired Palette */
+    --background: 0 0% 100%;
+    --background-soft: 0 0% 96%;
+    --foreground: 0 0% 7%;
+    --foreground-muted: 0 0% 33%;
+
+    /* White & Gray Web Colors */
+    --neural-line: 0 0% 60%;
+    --neural-node: 0 0% 40%;
+    --neural-glow: 0 0% 90%;
+    --neural-accent: 0 0% 70%;
+    --neural-silver: 0 0% 85%;
+
+    /* Card and Surface */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+    --glass: 0 0% 100% / 0.8;
+
+    /* Interactive Elements */
+    --primary: 0 0% 7%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 0 0% 90%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 7%;
+
+    --accent: 0 0% 70%;
+    --accent-foreground: 0 0% 7%;
+    --accent-muted: 0 0% 85%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 0 0% 70%;
+
+    /* Enhanced Cinematic Gradients */
+    --gradient-neural: linear-gradient(135deg, hsl(var(--background)), hsl(var(--background-soft)));
+    --gradient-glow: linear-gradient(135deg, hsl(var(--neural-glow) / 0.1), hsl(var(--neural-accent) / 0.1));
+    --gradient-depth: linear-gradient(180deg, transparent, hsl(var(--neural-line) / 0.05));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--neural-glow)), hsl(var(--neural-accent)), hsl(var(--neural-silver)));
+    --gradient-shimmer: linear-gradient(90deg, transparent, hsl(var(--neural-glow) / 0.4), transparent);
+    --gradient-cinematic: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--neural-line) / 0.05) 50%, hsl(var(--neural-line) / 0.1) 100%);
+
+    /* Enhanced Shadows and Effects */
+    --shadow-neural: 0 10px 40px -10px hsl(var(--neural-line) / 0.1);
+    --shadow-glow: 0 0 60px hsl(var(--neural-glow) / 0.3);
+    --shadow-immersive: 0 25px 80px -20px hsl(var(--neural-line) / 0.15);
+    --shadow-bento: 0 8px 32px hsl(var(--neural-line) / 0.12);
+    --shadow-hover: 0 20px 60px hsl(var(--neural-glow) / 0.4);
+    --shadow-cinematic: 0 32px 120px hsl(var(--neural-line) / 0.2);
+
+    /* Typography Scale */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Enhanced Animation Timing */
+    --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-neural: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-glow: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-cinematic: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-bento: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Additional Gradient Classes */
+    --gradient-radial: radial-gradient(circle, var(--tw-gradient-stops));
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Typography Classes */
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* Neural Web Animation */
+  .neural-line {
+    opacity: 0.1;
+    transition: var(--transition-neural);
+  }
+
+  .neural-line:hover {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 10px hsl(var(--neural-glow)));
+  }
+
+  /* Cinematic Scroll Animations */
+  .parallax-bg {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: var(--transition-smooth);
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Glow Effects */
+  .glow-on-hover {
+    transition: var(--transition-glow);
+  }
+
+  .glow-on-hover:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+
+  /* Immersive 3D iframe */
+  .hero-3d {
+    position: absolute;
+    inset: 0;
+    pointer-events: auto;
+    z-index: 1;
+  }
+
+  .hero-overlay {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .hero-overlay > * {
+    pointer-events: auto;
+  }
+  
+  /* Enhanced Cinematic Effects */
+  .hero-shimmer {
+    background: var(--gradient-shimmer);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  .parallax-element {
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+  }
+
+  .cinematic-scroll {
+    transition: var(--transition-cinematic);
+  }
+
+  /* Bento Grid Animations */
+  .bento-card {
+    transition: var(--transition-bento);
+    transform-style: preserve-3d;
+  }
+
+  .bento-card:hover {
+    transform: translateY(-8px) rotateX(5deg) rotateY(5deg);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .bento-card.reveal {
+    animation: bento-reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes bento-reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(60px) rotateX(10deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) rotateX(0deg);
+    }
+  }
+
+  /* Timeline River Animation */
+  .timeline-river {
+    background: linear-gradient(90deg, 
+      transparent, 
+      hsl(var(--neural-glow) / 0.3), 
+      hsl(var(--neural-accent) / 0.4), 
+      hsl(var(--neural-glow) / 0.3), 
+      transparent
+    );
+    background-size: 300% 100%;
+    animation: river-flow 8s ease-in-out infinite;
+  }
+
+  @keyframes river-flow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Floating Neurons */
+  .floating-neuron {
+    animation: float-neuron 6s ease-in-out infinite;
+  }
+
+  @keyframes float-neuron {
+    0%, 100% { 
+      transform: translateY(0px) rotate(0deg);
+      opacity: 0.6;
+    }
+    33% { 
+      transform: translateY(-20px) rotate(120deg);
+      opacity: 1;
+    }
+    66% { 
+      transform: translateY(10px) rotate(240deg);
+      opacity: 0.8;
+    }
+  }
+}
+
+@layer components {
+  /* Section Containers */
+  .section-container {
+    @apply min-h-screen relative overflow-hidden;
+  }
+
+  .section-content {
+    @apply relative z-10 container mx-auto px-6 py-20;
+  }
+
+  /* Enhanced Neural Background Patterns */
+  .neural-bg {
+    @apply absolute inset-0 opacity-5;
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(var(--neural-glow)) 2px, transparent 2px),
+      radial-gradient(circle at 80% 20%, hsl(var(--neural-accent)) 1px, transparent 1px),
+      radial-gradient(circle at 40% 80%, hsl(var(--neural-silver)) 1px, transparent 1px),
+      linear-gradient(45deg, transparent 40%, hsl(var(--neural-glow) / 0.02) 50%, transparent 60%);
+    background-size: 100px 100px, 150px 150px, 200px 200px, 800px 800px;
+    animation: neural-drift 20s linear infinite;
+  }
+
+  @keyframes neural-drift {
+    0% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+    100% { background-position: 100% 100%, -100% 100%, 50% -50%, 100% 100%; }
+  }
+
+  /* Glassmorphism Components */
+  .glass-card {
+    @apply backdrop-blur-xl bg-glass border border-white/20;
+    box-shadow: var(--shadow-neural);
+  }
+
+  .glass-button {
+    @apply backdrop-blur-sm bg-white/10 border border-white/30;
+    transition: var(--transition-glow);
+  }
+
+  .glass-button:hover {
+    @apply bg-white/20 border-white/50;
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Bento Grid System */
+  .bento-grid {
+    @apply grid gap-6 auto-rows-fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .bento-large {
+    @apply col-span-2 row-span-2;
+  }
+
+  .bento-wide {
+    @apply col-span-2;
+  }
+
+  .bento-tall {
+    @apply row-span-2;
+  }
+
+  /* Era-specific themes enhanced */
+  .era-ancient { 
+    background: linear-gradient(135deg, hsl(43 100% 95%), hsl(35 100% 90%));
+  }
+  .era-greek { 
+    background: linear-gradient(135deg, hsl(220 100% 95%), hsl(240 100% 90%));
+  }
+  .era-roman { 
+    background: linear-gradient(135deg, hsl(0 100% 95%), hsl(25 100% 90%));
+  }
+  .era-medieval { 
+    background: linear-gradient(135deg, hsl(220 20% 15%), hsl(220 20% 5%));
+  }
+  .era-renaissance { 
+    background: linear-gradient(135deg, hsl(300 100% 95%), hsl(320 100% 90%));
+  }
+  .era-modern { 
+    background: linear-gradient(135deg, hsl(180 100% 95%), hsl(200 100% 90%));
+  }
+  .era-future { 
+    background: linear-gradient(135deg, hsl(var(--neural-glow) / 0.1), hsl(var(--neural-accent) / 0.1));
+  }
+}
